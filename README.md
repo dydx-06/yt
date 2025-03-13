@@ -1,2 +1,2 @@
 # yt
-Code for all Manim Animations
+Code for all Manim animations
