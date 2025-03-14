@@ -141,14 +141,8 @@ class Integral(Scene):
 
         # Animation
         self.play(Write(latex[0]))
-        self.play(
-            TransformByGlyphMap(
-                latex[0], latex[1],
-                ([], [0, 1])
-            )
-        )
         self.wait(delay)
-        self.play(Unwrite(latex[1]))
+        self.play(Unwrite(latex[0]))
         self.play(Write(latex[2]))
         self.wait(delay)
         self.play(
